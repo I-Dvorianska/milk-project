@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo__svg {
+  width: 41.66px;
+  height: 30px;
+
+  @media screen and (min-width: 1200px) {
+    width: 83.32px;
+    height: 60px;
+  }
+}
+
+.navigation {
+  @media screen and(max-width: 1200px) {
+    display: none;
+  }
+}
+
+.call-btn {
+  @media screen and(max-width: 1200px) {
+    display: none;
+  }
+}
