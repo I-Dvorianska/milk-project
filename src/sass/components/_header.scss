@@ -1,10 +1,21 @@
 .header {
-  display: flex;
-  justify-content: space-around;
+  @include centered-flex(stretch, space-around);
+}
+// .header::before {
+//   content: '';
+//   display: block;
+//   width: 320px;
+//   height: 10px;
+//   color: var(--bcg-blue-header);
+// }
+
+.logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .logo__svg {
-  width: 41.66px;
+  width: 112.22px;
   height: 30px;
 
   @media screen and (min-width: 1200px) {
@@ -16,6 +27,33 @@
 .navigation {
   @media screen and(max-width: 1200px) {
     display: none;
+  }
+}
+
+.header-list {
+  @include centered-flex(center, flex-start);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-list__link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+
+  border: 1px solid var(--accent-green);
+  border-radius: 100%;
+}
+
+.header-list__svg {
+  width: 14px;
+  height: 14px;
+  margin: 7px;
+
+  @media screen and (min-width: 1200px) {
+    width: 20px;
+    height: 20px;
   }
 }
 
